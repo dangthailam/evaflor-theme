@@ -596,13 +596,13 @@ function saveLotteryClientInfo() {
 					alert("Please Don't spam");
 				}
 			} else {
-				submitPlayerInfo();
+				submitPlayerInfo(clientName, email, zipCode);
 			}
 		}
 	});
 }
 
-function submitPlayerInfo() {
+function submitPlayerInfo(clientName, email, zipCode) {
 	var lotteryNumber = document.getElementById("nbLottery").innerHTML;
 	//Get current date for instance
 	var lotteryDate = vac_options.choose_lottery;
